@@ -1,13 +1,8 @@
-import Styles from "../Card.module.css";
-
-export const NewCard = () => {
+import Styles from "./CardList.module.css";
+export const NewCardsFragment = () => {
     return (
-        <section className={Styles["list-section"]}>
-      <h2 className={Styles["list-section__title"]} id="new">
-        Новинки
-      </h2>
-      <ul className={Styles["cards-list"]}>
-        <li className={Styles["cards-list__item"]}>
+        <>
+         <li className={Styles["cards-list__item"]}>
           <a href="/game-id.html" className={Styles["card-list__link"]}>
             <article className={Styles.card}>
               <img
@@ -20,7 +15,7 @@ export const NewCard = () => {
                 <p className={Styles.card__description}>
                   Управляй автомобилем, избегая аварий и перепрыгивая препятствия на пути к следующему уровню.
                 </p>
-                <div className="card__info-container">
+                <div className={Styles["card__info-container"]}>
                   <p className={Styles.card__author}>
                     Автор: <span className={Styles.card__accent}>Mahisto</span>
                   </p>
@@ -96,7 +91,7 @@ export const NewCard = () => {
                   Уворачивайся и отстреливайся от озлобленных квадратов и собирай жизни для перехода на следующий уровень.
                 </p>
                 <div className={Styles["card__info-container"]}>
-                  <p className={Styles.card__author}>
+                  <p className="card__author">
                     Автор: <span className={Styles.card__accent}>niclan</span>
                   </p>
                   <p className={Styles.card__votes}>
@@ -107,7 +102,6 @@ export const NewCard = () => {
             </article>
           </a>
         </li>
-      </ul>
-    </section>
+        </>
     )
 }

@@ -1,17 +1,14 @@
-import { Banner } from "./commponents/Banner/Banner";
-import { Promo } from "./commponents/Promo/Promo";
-import { PopularCards } from "./commponents/CardsList/PopularCardsList/PopularCardsList"; 
-import { NewCard } from "./commponents/CardsList/NewCardsList/NewCardsList"; 
-import"./page.module.css";
-
-
+import { Banner } from "./components/Banner/Banner"; 
+import { Promo } from "./components/Promo/Promo";
+import { PopularCardsList } from "./components/CardList/PopularCardsList";
+import { NewCardsList } from "./components/CardList/NewCardsList";
 export default function Home() {
   return (
     <main className="main">
    <Banner />
-    <PopularCards />
-    <NewCard />
-   <Promo />
+    <PopularCardsList />
+    <NewCardsList />
+    <Promo />
   </main>
   );
 }

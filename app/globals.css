@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Rubic One';
-  src: url(/next/public/fonts/rubic-one.woff);
+  src: url(/rubic-one.woff);
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Anonymous Pro';
-  src: url(/next/public/fonts/anonymouspro-regular.woff);
+  src: url(/anonymouspro-regular.woff);
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Anonymous Pro';
-  src: url(/next/public/fonts/anonymouspro-bold.woff);
+  src: url(/anonymouspro-bold.woff);
   font-weight: bold;
   font-display: swap;
 }
@@ -27,9 +27,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-
-
 
 body {
   margin: 0;
@@ -64,18 +61,6 @@ button {
   font-size: inherit;
 }
 
-.logo {
-  display: block;
-  padding: 20px 0px;
-  width: 148px;
-  min-width: 148px;
-  align-self: center;
-}
-
-.logo__image {
-  width: 100%;
-}
-
 .button {
   font-family: 'Rubic One', sans-serif;
   display: block;
@@ -95,9 +80,8 @@ button {
   color: #FFFF00;
 }
 
-.main {
-  overflow: hidden;
-}
+
+
 
 @media (width <= 1728px) {
   body {
