@@ -1,14 +1,25 @@
-import { Banner } from "./components/Banner/Banner"; 
+import { Banner } from "./components/Banner/Banner";
 import { Promo } from "./components/Promo/Promo";
-import { PopularCardsList } from "./components/CardList/PopularCardsList";
-import { NewCardsList } from "./components/CardList/NewCardsList";
+import { CardList } from "./components/CardList/CardList";
+import { NewCardsFragment } from "./components/CardList/NewCardsFragment";
+import { PopularCardsFragment } from "./components/CardList/PopularCardsFragment";
+
 export default function Home() {
   return (
     <main className="main">
-   <Banner />
-    <PopularCardsList />
-    <NewCardsList />
-    <Promo />
-  </main>
+      <Banner />
+
+      <CardList id="popular" title="Популярные">
+        <PopularCardsFragment />
+      </CardList>
+
+      <CardList id="new" title="Новые">
+        <NewCardsFragment />
+      </CardList>
+
+
+
+      <Promo />
+    </main>
   );
 }
